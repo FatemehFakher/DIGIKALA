@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "iran_regular";
+  src: url("./fonts/webfonts/woff2/IRAN.woff2") format("woff2");
+}
+@font-face {
+  font-family: "iran_semibold";
+  src: url("./fonts/webfonts/woff2/IRAN_SemiBold.woff2") format("woff2");
+}
+@font-face {
+  font-family: "iran_bold";
+  src: url("./fonts/webfonts/woff2/IRANBold.woff2") format("woff2");
+}
+@font-face {
+  font-family: "iran_black";
+  src: url("./fonts/webfonts/woff2/IRANBlack.woff2") format("woff2");
+}
+
+@theme {
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 840px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
+
+  --font-iran-bold: "iran_bold";
+  --font-iran-semibold: "iran_semibold";
+  --font-iran-regular: "iran_regular";
+  --font-iran-black: "iran_black";
+
+  --color-app-background: #f2f2f2;
+  --color-dk-brand-primary: #e6123d;
+  --color-dk-brand-secondary: #19bfd3;
+  --color-dk-brand-accent: #7f53ef;
+  --color-dk-brand-highlight: #2586ff;
+  --color-dk-success: #05ba58;
+  --color-dk-success-light: #e1f9e0;
+  --color-dk-success-dark: #029a49;
+  --color-dk-warning: #f9a825;
+  --color-dk-warning-light: #fff2eb;
+  --color-dk-warning-dark: #f57f17;
+  --color-dk-text-error: #b2001a;
+  --color-dk-object-error: #d32f2f;
+  --color-dk-info: #19bfd3;
+  --color-dk-info-light: #e6f4f7;
+  --color-dk-info-dark: #008eb2;
+  --color-dk-gray-50: #ffffff;
+  --color-dk-gray-100: #f0f0f1;
+  --color-dk-gray-200: #e0e0e2;
+  --color-dk-gray-300: #c0c2c5;
+  --color-dk-gray-400: #a1a3a8;
+  --color-dk-gray-500: #81858b;
+  --color-dk-gray-600: #62666d;
+  --color-dk-gray-700: #3f4064;
+  --color-dk-gray-800: #23254e;
+  --color-dk-gray-900: #0c0c0c;
+  --color-dk-text-primary: #1f1f1f;
+  --color-dk-text-secondary: #848484;
+  --color-dk-text-muted: #81858b;
+  --color-dk-text-light: #ffffff;
+  --color-dk-text-inverse: #f0f0f1;
+  --color-dk-content-2: #5c5c5c;
+  --color-dk-bg-primary: #ffffff;
+  --color-dk-bg-secondary: #f2f2f2;
+  --color-dk-bg-card: #fafafa;
+  --color-dk-button-primary: #ef4056;
+  --color-dk-border-default: #c1c1c1;
+  --color-dk-border-focus: #333333;
+}

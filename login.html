@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ورود | دیجی‌کالا</title>
+    <link
+      rel="icon"
+      href="./src/res/full-horizontal.svg"
+      type="image/svg+xml"
+    />
+    <link rel="stylesheet" href="./src/style.css" />
+  </head>
+
+  <body class="min-h-dvh w-full bg-dk-bg-primary font-iran-regular dark:bg-gray-900 dark:text-white">
+    <main class="flex min-h-dvh w-full items-center justify-center">
+      <section
+        class="relative flex w-full min-h-dvh flex-col items-center justify-center bg-dk-bg-primary p-5 md:min-h-0 md:w-[400px] md:rounded-lg md:border md:border-dk-border-default md:p-8"
+      >
+        <button
+          type="button"
+          aria-label="بازگشت"
+          class="absolute right-3 top-3 cursor-pointer rounded-md p-1 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-dk-border-focus"
+        >
+          <img
+            src="./src/res/arrow-right-short.svg"
+            alt=""
+            width="30"
+            height="30"
+          />
+        </button>
+
+        <header class="mb-10 flex w-full justify-center">
+          <img
+            src="./src/res/full-horizontal.svg"
+            width="160"
+            height="25"
+            alt="دیجی‌کالا"
+          />
+        </header>
+
+        <form class="w-full" novalidate>
+          <h1 class="my-5 font-iran-bold text-base text-dk-text-primary">
+            ورود یا ثبت‌نام در دیجی‌کالا
+          </h1>
+
+          <p class="text-xs leading-6 text-dk-text-muted">
+            لطفا شماره موبایل یا ایمیل خود را وارد کنید
+          </p>
+
+          <div class="relative mt-4">
+            <input
+              type="text"
+              id="username"
+              name="username"
+              autocomplete="username"
+              placeholder=" "
+              required
+              aria-describedby="username-error"
+              class="peer w-full rounded-lg border border-dk-border-default px-3 py-3 text-dk-text-primary outline-none transition focus-visible:border-dk-border-focus focus-visible:ring-2 focus-visible:ring-dk-border-focus/20 aria-[invalid=true]:border-dk-text-error"
+            />
+
+            <label
+              for="username"
+              class="absolute right-4 top-1/2 -translate-y-1/2 bg-dk-bg-primary px-1 text-xs text-dk-text-muted transition-all duration-200 peer-focus:-top-2 peer-focus:translate-y-0 peer-focus:text-dk-text-primary peer-focus:shadow-[0_0_0_2px_#fff] peer-[:not(:placeholder-shown)]:-top-2 peer-[:not(:placeholder-shown)]:translate-y-0 peer-[:not(:placeholder-shown)]:text-dk-text-primary"
+            >
+              شماره موبایل یا پست الکترونیک
+            </label>
+          </div>
+
+          <p
+            id="username-error"
+            class="mt-1 text-xs leading-6 text-dk-text-error"
+            hidden
+          >
+            لطفا این قسمت را خالی نگذارید
+          </p>
+
+          <button
+            type="submit"
+            class="my-3 flex w-full items-center justify-center rounded-lg bg-dk-button-primary py-3 text-dk-text-light transition-colors hover:bg-dk-button-primary/90 active:bg-dk-button-primary/80 disabled:cursor-not-allowed disabled:opacity-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-dk-border-focus"
+          >
+            ورود به دیجی‌کالا
+          </button>
+
+          <p class="mt-5 text-xs leading-6 text-dk-text-primary">
+            ورود شما به معنای پذیرش
+            <a
+              href="/terms"
+              class="text-dk-info-dark underline-offset-2 hover:underline focus-visible:rounded-sm focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-dk-border-focus"
+            >
+              شرایط دیجی‌کالا
+            </a>
+            و
+            <a
+              href="/privacy"
+              class="text-dk-info-dark underline-offset-2 hover:underline focus-visible:rounded-sm focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-dk-border-focus"
+            >
+              قوانین حریم‌خصوصی
+            </a>
+            است
+          </p>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
